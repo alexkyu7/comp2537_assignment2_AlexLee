@@ -36,8 +36,9 @@ app.use(express.static("public"));
 app.use("/", authRoutes);
 
 app.use((req, res) => {
-    res.status(404).render("/404", {
-        title: "Page Not Found"
+    res.status(404).render("404", {
+        title: "Page Not Found",
+        currentPage: "404"
     });
 });
 
