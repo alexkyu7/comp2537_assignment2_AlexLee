@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     password: String,
     user_type: {
         type: String,
-        default: "user"   // 👈 THIS is the key
+        default: "user"
     }
 });
 

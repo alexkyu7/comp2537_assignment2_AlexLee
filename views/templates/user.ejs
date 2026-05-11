@@ -1,5 +1,6 @@
 <li>
     <div class="user-info">
+        // Display username, email, and role badge
         <div class="username">
             <%= user.username %>
             <% if (user.user_type === "admin") { %>
@@ -10,7 +11,8 @@
         </div>
 
         <div class="email"><%= user.email %></div>
-
+        
+        // Action buttons for promoting/demoting users
         <div class="actions">
             <% if (user.user_type === "admin") { %>
                 <a href="/admin/demote/<%= user._id %>">Demote</a>
