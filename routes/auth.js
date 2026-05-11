@@ -165,7 +165,8 @@ router.post('/submitUser', async (req, res) => {
     await User.create({
         username,
         email,
-        password: hashedPassword
+        password: hashedPassword,
+        user_type: "user"
     });
 
     console.log("Inserted user");
