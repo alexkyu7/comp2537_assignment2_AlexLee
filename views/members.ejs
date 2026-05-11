@@ -1,0 +1,37 @@
+<%- include("templates/header") %>
+
+<div class="members-container">
+
+    <h1>Hello, <%= user.username %></h1>
+
+    <div class="row g-4 text-center">
+
+        <div class="col-md-4">
+            <div class="image-card">
+                <img class="img-fluid" src="/img/maple.webp"/>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="image-card">
+                <img class="img-fluid" src="/img/rimuru.png"/>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="image-card">
+                <img class="img-fluid" src="/img/sui.jpg"/>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="logout-wrapper">
+        <a href="/logout">
+            <button class="logout-btn">Logout</button>
+        </a>
+    </div>
+
+</div>
+
+<%- include("templates/footer") %>

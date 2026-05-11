@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+
+<div class="signup-container">
+    <h1>Sign Up</h1>
+
+    <form action="/submitUser" method="post" class="signup-form">
+        <input name="username" type="text" placeholder="Username">
+        <input name="email" type="email" placeholder="Email">
+        <input name="password" type="password" placeholder="Password">
+
+        <button type="submit">Create Account</button>
+    </form>
+</div>
+
+<%- include("templates/footer") %>

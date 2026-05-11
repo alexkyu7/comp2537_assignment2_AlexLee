@@ -1,0 +1,25 @@
+{
+  "name": "assignment_2",
+  "version": "1.0.0",
+  "description": "ejs manipulation plus authentication plus css",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Alex Lee",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bootstrap": "^5.3.8",
+    "connect-mongo": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "joi": "^18.2.1",
+    "mongo-sanitizer": "^1.0.4",
+    "mongoose": "^9.6.2",
+    "node": "^24.15.0",
+    "nodemon": "^3.1.14"
+  }
+}

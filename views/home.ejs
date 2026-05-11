@@ -1,0 +1,39 @@
+<%- include("templates/header") %>
+
+<div class="home-container">
+
+    <% if (user) { %>
+
+        <h1>Hello, <%= user.username %></h1>
+
+        <div class="home-buttons">
+            <a href="/members">
+                <button class="primary-btn">Members Area</button>
+            </a>
+
+            <a href="/logout">
+                <button class="danger-btn">Logout</button>
+            </a>
+        </div>
+
+    <% } else { %>
+
+        <h1>Welcome to the Home Page!</h1>
+
+        <p>Please log in or sign up to continue.</p>
+
+        <div class="home-buttons">
+            <a href="/signup">
+                <button class="success-btn">Sign Up</button>
+            </a>
+
+            <a href="/login">
+                <button class="primary-btn">Log In</button>
+            </a>
+        </div>
+
+    <% } %>
+
+</div>
+
+<%- include("templates/footer") %>

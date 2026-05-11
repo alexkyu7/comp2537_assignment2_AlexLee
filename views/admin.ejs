@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+
+<div class="members-list-container">
+
+    <h1 class="text-center mb-4">Admin Dashboard</h1>
+
+    <ol class="member-list">
+        <% users.forEach(user => { %>
+            <%- include("templates/user", { user }) %>
+        <% }) %>
+    </ol>
+
+</div>
+
+<%- include("templates/footer") %>
